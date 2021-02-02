@@ -8,7 +8,7 @@
 
 The following checks are performed for every feature in the dataset.
 
-* Check that the [waterLevel](#waterLevelSea) element of the spatial object type "Sea" is 'meanHighWater' (i.e. http://inspire.ec.europa.eu/codelist/WaterLevelValue/meanHighWater) (OCL: " inv: self.extent.waterLevel = 'meanHighWater' "). Sea is defined at Mean High Water, but this constraint can be relaxed if there is not significant tidal variation in water level. "Describe manual test and error message"
+* Check that the [waterLevel](#waterLevelSea) element of the spatial object type "Sea" is 'meanHighWater' (i.e. http://inspire.ec.europa.eu/codelist/WaterLevelValue/meanHighWater) (OCL: " inv: self.extent.waterLevel = 'meanHighWater' "). Sea is defined at Mean High Water, but this constraint can be relaxed if there is not significant tidal variation in water level. --> " Add description of the eventually manual test and related error message"
 
 * Check that the [waterLevel](#waterLevelCoastline) element of the spatial object type "Coastline" is 'meanHighWater' (i.e. http://inspire.ec.europa.eu/codelist/WaterLevelValue/meanHighWater). Coastline is a special case of shoreline at Mean High Water Level (MHW). Coastline is the boundary between land and sea to be used for viewing, discovery and general purpose applications where a land/marine boundary is required. Where there is no significant variation in water level, Mean Sea Level (MSL) (i.e. http://inspire.ec.europa.eu/codelist/WaterLevelValue/meanSeaLevel) can be used as a substitute for MHW.
 
