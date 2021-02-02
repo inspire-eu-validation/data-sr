@@ -40,8 +40,7 @@ The instantiable feature types in the application schema are:
 
 *Note*: When "features" or "spatial objects" are mentioned in the test cases, this refers only to instances of feature types of this application schema, not to any types specified in any other application schema.
 
-## External document references https://inspire.ec.europa.eu/file/1626/download?token=Yy2rUFMH
-https://inspire.ec.europa.eu/file/1548/download?token=w6Td1Bow
+## External document references
 
 The following abbreviations are used in the test text for referring to external documents:
 
