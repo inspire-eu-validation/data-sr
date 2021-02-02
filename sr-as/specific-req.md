@@ -14,7 +14,7 @@ The following checks shall be performed manually for all features in the dataset
 
 * The code lists defined in the spatial data theme Oceanographic Geographical Features shall be used to identify phenomena represented by MarineContour spatial object types.
 
-* SeaAreas shall be represented as 2-dimensional geometries. --> TO BE VERIFIED WHETHER IT CAN BE AUTOMIZED
+* SeaAreas shall be represented as 2-dimensional geometries. --> TO BE VERIFIED WHETHER IT CAN BE AUTOMATIZED
 
 TO BETTER CHECK - THERE IS A CONSTRAINT THAT IS SIMILAR
 * The MarineExtent of a Sea spatial object shall have a waterlevel value equal to “MeanHighWater”, unless there is no appreciable change in the Sea extent due to tides, in which case a value of “MeanSeaLevel” may be used.
