@@ -30,4 +30,4 @@ The namespace prefixes used as described in [README.md](./README.md#namespaces).
 
 Abbreviation                                          |  XPath expression
 ----------------------------------------------------- | ------------------------------------------------------------------
-features <a name="features"></a>   |  //schema-element(sd:SeaArea) \| //schema-element(sr:Sea) \| //schema-element(sr:MarineCirculationZone) \| //schema-element(sr:InterTidalArea) \| //schema-element(sr:Shoreline) \| //schema-element(sr:Coastline) \| //schema-element(sr:MarineContour) \| //schema-element(sr:SeaBedArea) \| //schema-element(sr:SeaSurfaceArea)
+features <a name="features"></a>   |  //schema-element(sr:SeaArea) \| //schema-element(sr:Sea) \| //schema-element(sr:MarineCirculationZone) \| //schema-element(sr:InterTidalArea) \| //schema-element(sr:Shoreline) \| //schema-element(sr:Coastline) \| //schema-element(sr:MarineContour) \| //schema-element(sr:SeaBedArea) \| //schema-element(sr:SeaSurfaceArea)
