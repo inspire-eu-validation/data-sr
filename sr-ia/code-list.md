@@ -21,10 +21,13 @@ This data theme currently has the following empty codelists:
 **Reference(s)**: 
 
 * [TG DS Template](./README.md#ref_TG_DS_tmpl) IR requirement Article 6 (3)
+* [TG DS-SR ](./README.md#ref_TG_DS_SR) Annex C
 
 **Test type**: Automated
 
 **Notes**
+
+Annex C of the [TG DS-SR ](./README.md#ref_TG_DS_SR) includes recommended values that may be used by data providers. They are published in the INSPIRE Registry. Before creating new terms, please check if one of them can be used.
 
 ## Messages
 
