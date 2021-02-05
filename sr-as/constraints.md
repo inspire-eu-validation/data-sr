@@ -8,7 +8,7 @@
 
 The following checks are performed for every feature in the dataset.
 
-* Check that the [waterLevel](#waterLevelSea) element of the spatial object type "Sea" is 'meanHighWater' (i.e. http://inspire.ec.europa.eu/codelist/WaterLevelValue/meanHighWater) (OCL: " inv: self.extent.waterLevel = 'meanHighWater' "). Sea is defined at Mean High Water, but this constraint can be relaxed if there is not significant tidal variation in water level. --> " Add description of the eventually manual test and related error message"
+* Check that the [waterLevel](#waterLevelSea) element of the spatial object type "Sea" is 'meanHighWater' (i.e. http://inspire.ec.europa.eu/codelist/WaterLevelValue/meanHighWater) (OCL: " inv: self.extent.waterLevel = 'meanHighWater' "). Sea is defined at Mean High Water, but this constraint can be relaxed if there is not significant tidal variation in water level. If the constraint is violated a manual check is required and the message will be [noTidalVariationCheck](#noTidalVariationCheck).
 
 * Check that the [waterLevel](#waterLevelCoastline) element of the spatial object type "Coastline" is 'meanHighWater' (i.e. http://inspire.ec.europa.eu/codelist/WaterLevelValue/meanHighWater). Coastline is a special case of shoreline at Mean High Water Level (MHW). Coastline is the boundary between land and sea to be used for viewing, discovery and general purpose applications where a land/marine boundary is required. Where there is no significant variation in water level, Mean Sea Level (MSL) (i.e. http://inspire.ec.europa.eu/codelist/WaterLevelValue/meanSeaLevel) can be used as a substitute for MHW.
 
@@ -34,6 +34,7 @@ Verify that the OCL constraints that are specified in the UML model of the appli
 Identifier  |  Message text (parameters start with '$')
 ---------------------------------------------------------- | -------------------------------------------------------------------------
 constraintViolation <a name="constraintViolation"/>  |  XML document '$filename', $featureType '$gmlid': The constraint '$constraint' is violated.
+noTidalVariationCheck <a name="noTidalVariationCheck"/>  |  XML document '{filename}', {featureType} '{gmlid}': The property '{property}' has a value '{value}' that is not equal to meanHighWater value, please verify if there is not significant tidal variation in water level.
 
 ## Contextual XPath references
 
