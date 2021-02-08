@@ -1,4 +1,4 @@
-# Sea Regions theme-specific requirements - DRAFT
+# Sea Regions theme-specific requirements
 
 **Purpose**: Verify that the features provided in the dataset adhere to the theme-specific requirements specified in the INSPIRE application schema.
 
@@ -14,11 +14,11 @@ The following checks shall be performed manually for all features in the dataset
 
 * The Sea spatial object type shall be used to describe identified, named areas of sea (or ocean). Artificial reporting units are excluded from this requirement.
 
-* The low water level used to define an IntertidalArea shall be provided as a value of the lowWaterLevel attribute. The level shall be a low water level. --> TO BE VERIFIED WHETHER IT CAN BE AUTOMATIZED
+* The low water level used to define an IntertidalArea shall be provided as a value of the lowWaterLevel attribute. The level shall be a low water level.
 
-* The code lists defined in the spatial data theme Oceanographic Geographical Features shall be used to identify phenomena represented by MarineContour spatial object types. --> TO BE VERIFIED WHETHER IT CAN BE AUTOMATIZED
+* The code lists defined in the spatial data theme Oceanographic Geographical Features shall be used to identify phenomena represented by MarineContour spatial object types.
 
-* SeaAreas shall be represented as 2-dimensional geometries. --> TO BE VERIFIED WHETHER IT CAN BE AUTOMATIZED
+* SeaAreas shall be represented as 2-dimensional geometries.
 
 
 **Reference(s)**: 
