@@ -27,6 +27,8 @@ The following checks are performed for every feature in the dataset.
 
 **Notes** 
 
+GM_Surface is implemented in GML by: gml:Surface, gml:Polygon, gml:PolyhedralSurface and gml:TriangulatedSurface. GM_Point is implemented in GML by gml:Point.
+
 Verify that the OCL constraints that are specified in the UML model of the application schema are met, i.e. validate features against the constraints. For unmet constraints report [constraintViolation](#constraintViolation).
 
 ## Messages
@@ -44,5 +46,5 @@ Abbreviation                   |  XPath expression                 |Multiplicity
 ------------------------------ | --------------------------------- | ------------------|----------
 waterLevel <a name="waterLevelSea"></a> | //schema-element(sr:Sea)/sr:extent/sr:MarineExtent/sr:waterLevel/@xlink:href="http://inspire.ec.europa.eu/codelist/WaterLevelValue/meanHighWater" | 0..1 | No
 waterLevel <a name="waterLevelCoastline"></a> | //schema-element(sr:Coastline)/sr:waterLevel/@xlink:href="http://inspire.ec.europa.eu/codelist/WaterLevelValue/meanHighWater"  OR //schema-element(sr:Coastline)/sr:waterLevel/@xlink:href="http://inspire.ec.europa.eu/codelist/WaterLevelValue/meanSeaLevel" | 1 | Yes
-geometry <a name="geometry"></a> | //schema-element(sr:SeaBedArea)/sr:geometry/gml:Surface OR //schema-element(sr:SeaBedArea)/sr:geometry/gml:Point <br> //schema-element(sr:SeaSurfaceArea)/sr:geometry/gml:Surface OR //schema-element(sr:SeaSurfaceArea)/sr:geometry/gml:Point | 0..1 | No
+geometry <a name="geometry"></a> | //schema-element(sr:SeaBedArea)/sr:geometry/gml:Surface <br> //schema-element(sr:SeaBedArea)/sr:geometry/gml:Polygon <br> //schema-element(sr:SeaBedArea)/sr:geometry/gml:PolyhedralSurface <br> //schema-element(sr:SeaBedArea)/sr:geometry/gml:TriangulatedSurface OR //schema-element(sr:SeaBedArea)/sr:geometry/gml:Point <br> //schema-element(sr:SeaSurfaceArea)/sr:geometry/gml:Surface <br> //schema-element(sr:SeaSurfaceArea)/sr:geometry/gml:Polygon <br> //schema-element(sr:SeaSurfaceArea)/sr:geometry/gml:PolyhedralSurface <br> //schema-element(sr:SeaSurfaceArea)/sr:geometry/gml:TriangulatedSurface OR //schema-element(sr:SeaSurfaceArea)/sr:geometry/gml:Point | 0..1 | No
 extent <a name="extent"></a> | //schema-element(sr:MarineCirculationZone)/sr:extent <br> //schema-element(sr:Sea)/sr:extent | 1..\*  | No
